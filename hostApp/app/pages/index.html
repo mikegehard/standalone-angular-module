@@ -6,7 +6,12 @@
 </head>
 <body>
 <div ng-view></div>
+<!-- Loading Angular externally is important so you don't load it twice. This
+makes Angular, and the browser, very unhappy. -->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<!-- This will at some point be published to a CDN for production but to do
+development you will need this line. -->
+<script src="http://localhost:8001/js/app.js"></script>
 <script type="text/javascript" src="/js/app.js"></script>
 </body>
 </html>

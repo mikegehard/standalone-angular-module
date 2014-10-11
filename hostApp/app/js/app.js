@@ -1,4 +1,4 @@
-var hostApp = angular.module("hostApp", ["ngRoute"]);
+var hostApp = angular.module("hostApp", ["ngRoute", "someDirectives"]);
 
 hostApp.config(function($routeProvider) {
     $routeProvider.when('/', {
